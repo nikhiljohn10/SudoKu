@@ -1,0 +1,400 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A5A3B0F7250E83F50070E140 /* Controls.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A3B0F6250E83F50070E140 /* Controls.swift */; };
+		A5A3B0FB250E85030070E140 /* OptionControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A3B0FA250E85030070E140 /* OptionControl.swift */; };
+		A5A3B0FD250E85170070E140 /* ValueControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A3B0FC250E85170070E140 /* ValueControl.swift */; };
+		A5A3B0FF250FC4300070E140 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A3B0FE250FC4300070E140 /* Model.swift */; };
+		A5F8D7DB250E25E8000AC0F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F8D7DA250E25E8000AC0F5 /* AppDelegate.swift */; };
+		A5F8D7DD250E25E9000AC0F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F8D7DC250E25E9000AC0F5 /* ContentView.swift */; };
+		A5F8D7DF250E25EE000AC0F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5F8D7DE250E25EE000AC0F5 /* Assets.xcassets */; };
+		A5F8D7E2250E25EE000AC0F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5F8D7E1250E25EE000AC0F5 /* Preview Assets.xcassets */; };
+		A5F8D7E5250E25EE000AC0F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5F8D7E3250E25EE000AC0F5 /* Main.storyboard */; };
+		A5F8D7EE250E261A000AC0F5 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F8D7ED250E261A000AC0F5 /* Board.swift */; };
+		A5F8D7F0250E26D4000AC0F5 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F8D7EF250E26D4000AC0F5 /* Box.swift */; };
+		A5F8D7F2250E2765000AC0F5 /* InnerBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F8D7F1250E2765000AC0F5 /* InnerBox.swift */; };
+		A5F8D7F4250E2933000AC0F5 /* MajorBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F8D7F3250E2933000AC0F5 /* MajorBox.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A5A3B0F6250E83F50070E140 /* Controls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controls.swift; sourceTree = "<group>"; };
+		A5A3B0FA250E85030070E140 /* OptionControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionControl.swift; sourceTree = "<group>"; };
+		A5A3B0FC250E85170070E140 /* ValueControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueControl.swift; sourceTree = "<group>"; };
+		A5A3B0FE250FC4300070E140 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		A5F8D7D7250E25E8000AC0F5 /* SudoKu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SudoKu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5F8D7DA250E25E8000AC0F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A5F8D7DC250E25E9000AC0F5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A5F8D7DE250E25EE000AC0F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A5F8D7E1250E25EE000AC0F5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A5F8D7E4250E25EE000AC0F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A5F8D7E6250E25EE000AC0F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5F8D7E7250E25EE000AC0F5 /* SudoKu.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SudoKu.entitlements; sourceTree = "<group>"; };
+		A5F8D7ED250E261A000AC0F5 /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		A5F8D7EF250E26D4000AC0F5 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		A5F8D7F1250E2765000AC0F5 /* InnerBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InnerBox.swift; sourceTree = "<group>"; };
+		A5F8D7F3250E2933000AC0F5 /* MajorBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajorBox.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5F8D7D4250E25E8000AC0F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A5A3B0F8250E84390070E140 /* Board */ = {
+			isa = PBXGroup;
+			children = (
+				A5F8D7ED250E261A000AC0F5 /* Board.swift */,
+				A5F8D7F3250E2933000AC0F5 /* MajorBox.swift */,
+				A5F8D7EF250E26D4000AC0F5 /* Box.swift */,
+				A5F8D7F1250E2765000AC0F5 /* InnerBox.swift */,
+			);
+			path = Board;
+			sourceTree = "<group>";
+		};
+		A5A3B0F9250E84410070E140 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				A5A3B0F6250E83F50070E140 /* Controls.swift */,
+				A5A3B0FA250E85030070E140 /* OptionControl.swift */,
+				A5A3B0FC250E85170070E140 /* ValueControl.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		A5F8D7CE250E25E8000AC0F5 = {
+			isa = PBXGroup;
+			children = (
+				A5F8D7D9250E25E8000AC0F5 /* SudoKu */,
+				A5F8D7D8250E25E8000AC0F5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A5F8D7D8250E25E8000AC0F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5F8D7D7250E25E8000AC0F5 /* SudoKu.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5F8D7D9250E25E8000AC0F5 /* SudoKu */ = {
+			isa = PBXGroup;
+			children = (
+				A5A3B0FE250FC4300070E140 /* Model.swift */,
+				A5F8D7DA250E25E8000AC0F5 /* AppDelegate.swift */,
+				A5F8D7DC250E25E9000AC0F5 /* ContentView.swift */,
+				A5A3B0F8250E84390070E140 /* Board */,
+				A5A3B0F9250E84410070E140 /* Controls */,
+				A5F8D7DE250E25EE000AC0F5 /* Assets.xcassets */,
+				A5F8D7E3250E25EE000AC0F5 /* Main.storyboard */,
+				A5F8D7E6250E25EE000AC0F5 /* Info.plist */,
+				A5F8D7E7250E25EE000AC0F5 /* SudoKu.entitlements */,
+				A5F8D7E0250E25EE000AC0F5 /* Preview Content */,
+			);
+			path = SudoKu;
+			sourceTree = "<group>";
+		};
+		A5F8D7E0250E25EE000AC0F5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A5F8D7E1250E25EE000AC0F5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5F8D7D6250E25E8000AC0F5 /* SudoKu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5F8D7EA250E25EE000AC0F5 /* Build configuration list for PBXNativeTarget "SudoKu" */;
+			buildPhases = (
+				A5F8D7D3250E25E8000AC0F5 /* Sources */,
+				A5F8D7D4250E25E8000AC0F5 /* Frameworks */,
+				A5F8D7D5250E25E8000AC0F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SudoKu;
+			productName = SudoKu;
+			productReference = A5F8D7D7250E25E8000AC0F5 /* SudoKu.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5F8D7CF250E25E8000AC0F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = Nikz.in;
+				TargetAttributes = {
+					A5F8D7D6250E25E8000AC0F5 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = A5F8D7D2250E25E8000AC0F5 /* Build configuration list for PBXProject "SudoKu" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A5F8D7CE250E25E8000AC0F5;
+			productRefGroup = A5F8D7D8250E25E8000AC0F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5F8D7D6250E25E8000AC0F5 /* SudoKu */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5F8D7D5250E25E8000AC0F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5F8D7E5250E25EE000AC0F5 /* Main.storyboard in Resources */,
+				A5F8D7E2250E25EE000AC0F5 /* Preview Assets.xcassets in Resources */,
+				A5F8D7DF250E25EE000AC0F5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5F8D7D3250E25E8000AC0F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5A3B0FB250E85030070E140 /* OptionControl.swift in Sources */,
+				A5F8D7DD250E25E9000AC0F5 /* ContentView.swift in Sources */,
+				A5F8D7F2250E2765000AC0F5 /* InnerBox.swift in Sources */,
+				A5F8D7F0250E26D4000AC0F5 /* Box.swift in Sources */,
+				A5A3B0F7250E83F50070E140 /* Controls.swift in Sources */,
+				A5A3B0FF250FC4300070E140 /* Model.swift in Sources */,
+				A5F8D7F4250E2933000AC0F5 /* MajorBox.swift in Sources */,
+				A5F8D7DB250E25E8000AC0F5 /* AppDelegate.swift in Sources */,
+				A5F8D7EE250E261A000AC0F5 /* Board.swift in Sources */,
+				A5A3B0FD250E85170070E140 /* ValueControl.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A5F8D7E3250E25EE000AC0F5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5F8D7E4250E25EE000AC0F5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A5F8D7E8250E25EE000AC0F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A5F8D7E9250E25EE000AC0F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		A5F8D7EB250E25EE000AC0F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SudoKu/SudoKu.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"SudoKu/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SudoKu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = in.nikz.SudoKu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A5F8D7EC250E25EE000AC0F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SudoKu/SudoKu.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"SudoKu/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SudoKu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = in.nikz.SudoKu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5F8D7D2250E25E8000AC0F5 /* Build configuration list for PBXProject "SudoKu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5F8D7E8250E25EE000AC0F5 /* Debug */,
+				A5F8D7E9250E25EE000AC0F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5F8D7EA250E25EE000AC0F5 /* Build configuration list for PBXNativeTarget "SudoKu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5F8D7EB250E25EE000AC0F5 /* Debug */,
+				A5F8D7EC250E25EE000AC0F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A5F8D7CF250E25E8000AC0F5 /* Project object */;
+}
