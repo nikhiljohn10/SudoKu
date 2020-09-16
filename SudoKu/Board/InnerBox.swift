@@ -10,30 +10,54 @@ import SwiftUI
 
 struct InnerBox: View {
     var value: String
-    var options: [String: Bool]
+    @Binding var options: [String: Bool]
     @EnvironmentObject var model: UserModel
     var body: some View {
         VStack(spacing: 0){
-            HStack(spacing: 0){
-                ForEach(0..<9){ id in
-                    Text(self.getOption(id: id, options: self.options))
-                        .multilineTextAlignment(.center)
-                        .font(.system(size: 12))
-                        .foregroundColor(Color(white: 0.3))
+            if self.value == "" {
+                VStack(spacing: 0){
+                    ForEach(0..<3){ rid in
+                        HStack(spacing: 0){
+                            ForEach(0..<3){ cid in
+                                Button(action:{
+                                    self.options["\(rid*3+cid+1)"] = !self.getOption(rid: rid, cid: cid)
+                                }){
+                                    InnerOptText(
+                                        text: "\(rid*3+cid+1)",
+                                        isActive: self.getOption(rid: rid, cid: cid)
+                                    )
+                                }.buttonStyle(PlainButtonStyle())
+                            }
+                        }
+                    }
                 }
-            }
             .padding(.horizontal,2)
-            Spacer()
-            Text(self.value)
-                .multilineTextAlignment(.center)
-                .font(.largeTitle)
-                .foregroundColor(Color.black)
-            Spacer()
+            } else {
+                Text(self.value)
+                    .multilineTextAlignment(.center)
+                    .font(.largeTitle)
+                    .foregroundColor(Color.black)
+            }
         }
     }
     
-    func getOption(id: Int, options: [String: Bool]) -> String {
-        let text = String(id+1)
-        return options[text] ?? false ? text : ""
+    func getOption(rid: Int, cid: Int) -> Bool {
+        return self.options["\(rid*3+cid+1)"] ?? false
+    }
+}
+
+
+struct InnerOptText: View {
+    var text: String
+    var isActive: Bool
+    var body: some View {
+        Text(text)
+            .multilineTextAlignment(.center)
+            .font(.system(size: 12))
+            .frame(width:21,height: 21)
+            .foregroundColor(Color(white: self.isActive ? 1 : 0.4 ))
+            .background(self.isActive ? Color.pink : Color.white )
+            .cornerRadius(2)
+            .padding(1)
     }
 }

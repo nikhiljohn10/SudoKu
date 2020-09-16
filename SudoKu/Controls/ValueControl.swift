@@ -13,6 +13,8 @@ struct ValueControl: View {
     var body: some View {
         VStack(spacing: 10){
             Text("Value")
+                .padding(.bottom)
+                .font(.headline)
             RadButton(text: "")
             ForEach(0..<numbers.count) { id in
                 RadButton(text: self.numbers[id])

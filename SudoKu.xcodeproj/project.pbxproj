@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A5A3B0F7250E83F50070E140 /* Controls.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A3B0F6250E83F50070E140 /* Controls.swift */; };
-		A5A3B0FB250E85030070E140 /* OptionControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A3B0FA250E85030070E140 /* OptionControl.swift */; };
 		A5A3B0FD250E85170070E140 /* ValueControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A3B0FC250E85170070E140 /* ValueControl.swift */; };
 		A5A3B0FF250FC4300070E140 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A3B0FE250FC4300070E140 /* Model.swift */; };
 		A5F8D7DB250E25E8000AC0F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F8D7DA250E25E8000AC0F5 /* AppDelegate.swift */; };
@@ -24,7 +23,6 @@
 
 /* Begin PBXFileReference section */
 		A5A3B0F6250E83F50070E140 /* Controls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controls.swift; sourceTree = "<group>"; };
-		A5A3B0FA250E85030070E140 /* OptionControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionControl.swift; sourceTree = "<group>"; };
 		A5A3B0FC250E85170070E140 /* ValueControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueControl.swift; sourceTree = "<group>"; };
 		A5A3B0FE250FC4300070E140 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		A5F8D7D7250E25E8000AC0F5 /* SudoKu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SudoKu.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,7 +65,6 @@
 			isa = PBXGroup;
 			children = (
 				A5A3B0F6250E83F50070E140 /* Controls.swift */,
-				A5A3B0FA250E85030070E140 /* OptionControl.swift */,
 				A5A3B0FC250E85170070E140 /* ValueControl.swift */,
 			);
 			path = Controls;
@@ -185,7 +182,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5A3B0FB250E85030070E140 /* OptionControl.swift in Sources */,
 				A5F8D7DD250E25E9000AC0F5 /* ContentView.swift in Sources */,
 				A5F8D7F2250E2765000AC0F5 /* InnerBox.swift in Sources */,
 				A5F8D7F0250E26D4000AC0F5 /* Box.swift in Sources */,
@@ -333,6 +329,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"SudoKu/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -343,6 +340,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = in.nikz.SudoKu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -357,6 +355,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"SudoKu/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -367,6 +366,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = in.nikz.SudoKu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

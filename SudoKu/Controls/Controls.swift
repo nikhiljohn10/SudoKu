@@ -14,10 +14,8 @@ struct Controls: View {
             Text("Controls")
                 .font(.largeTitle)
                 .padding(.vertical)
-            HStack(alignment: .top, spacing: 40) {
-                ValueControl()
-                OptionControl()
-            }
+            Spacer()
+            ValueControl()
             Spacer()
         }
     }
