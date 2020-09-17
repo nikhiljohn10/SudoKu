@@ -10,27 +10,29 @@ import SwiftUI
 
 struct MajorBox: View {
     @EnvironmentObject var model: UserModel
-    var isActiveSec: Bool
     var sec_id: Int
+    var sec_col: Int {
+        return self.sec_id%3
+    }
+    var sec_row: Int {
+        return (self.sec_id - self.sec_col)/3
+    }
     var body: some View {
-        VStack(spacing: 0) {
-            ForEach(0..<3) { row_id in
-                HStack(spacing: 0) {
-                    ForEach(0..<3) { col_id in
-                        Box(
-                            isActiveSec: self.isActiveSec,
-                            sec: self.sec_id,
-                            row: row_id,
-                            col: col_id
-                        ).onTapGesture {
-                            self.model.selSec = self.sec_id
-                            self.model.selRow = row_id
-                            self.model.selCol = col_id
-                        }
-                    }
+        BoardOf3x3 { row_id, col_id in
+            Box(
+                sec_row: self.sec_row,
+                sec_col: self.sec_col,
+                row: row_id,
+                col: col_id
+            ).onTapGesture {
+                if !self.model.isLocked[self.sec_row][self.sec_col][row_id][col_id] && !self.model.setOptions {
+                    self.model.value[self.sec_row][self.sec_col][row_id][col_id] = ""
+                }
+                if !self.model.lock {
+                    self.model.isLocked[self.sec_row][self.sec_col][row_id][col_id] = false
                 }
             }
-        }
-    .padding(1)
+            .animation(.interpolatingSpring(stiffness: 50, damping: 10))
+        }.padding(1)
     }
 }

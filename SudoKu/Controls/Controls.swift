@@ -9,14 +9,28 @@
 import SwiftUI
 
 struct Controls: View {
+    @EnvironmentObject var model: UserModel
     var body: some View {
-        VStack {
-            Text("Controls")
-                .font(.largeTitle)
-                .padding(.vertical)
+        VStack(spacing: 30){
+            VStack(alignment: .leading) {
+                Text("Controls")
+                    .font(.headline)
+                Toggle(isOn: self.$model.setOptions){
+                    Text("Option Mode: ")
+                }.toggleStyle(SwitchToggleStyle())
+                Toggle(isOn: self.$model.lock){
+                    Text("Lock: ")
+                }.toggleStyle(SwitchToggleStyle())
+            }
+            VStack(alignment: .leading) {
+                Text("Option Color")
+                    .font(.headline)
+                ColorPicker()
+                Toggle(isOn: self.$model.optionsTextColor){
+                    Text("Black text: ")
+                }.toggleStyle(SwitchToggleStyle())
+            }
             Spacer()
-            ValueControl()
-            Spacer()
-        }
+        }.padding(.vertical,10)
     }
 }

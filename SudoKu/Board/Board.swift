@@ -12,28 +12,29 @@ struct Board: View {
     @EnvironmentObject var model: UserModel
     var body: some View {
         VStack {
-            VStack(spacing: 0) {
-                ForEach(0..<3) { mbox_id in
-                    HStack(spacing: 0) {
-                        ForEach(0..<3) { box_id in
-                            MajorBox(
-                                isActiveSec: self.isActiveSec(row: mbox_id,col: box_id),
-                                sec_id: self.sec_id(row: mbox_id, col: box_id)
-                            )
-                        }
-                    }
-                }
+            BoardOf3x3 { sec_row_id, sec_col_id   in
+                MajorBox(sec_id: (sec_row_id*3)+sec_col_id)
             }
         }
         .padding(2)
         .background(Color.black)
     }
-    
-    func isActiveSec(row: Int, col: Int) -> Bool {
-        return self.model.selSec == (row * 3 + col)
+}
+
+struct BoardOf3x3<Content: View>: View {
+    let content: (Int, Int) -> Content
+    init( @ViewBuilder content: @escaping (Int, Int) -> Content) {
+        self.content = content
     }
-    
-    func sec_id(row:Int, col:Int) -> Int {
-        return ((row*3)+col)
+    var body: some View {
+        VStack(spacing: 0){
+            ForEach(0..<3){ rid in
+                HStack(spacing: 0){
+                    ForEach(0..<3){ cid in
+                        self.content(rid, cid)
+                    }
+                }
+            }
+        }
     }
 }

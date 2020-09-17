@@ -7,19 +7,25 @@
 //
 
 import Cocoa
-import SwiftUI
+import SwiftUI 
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     var window: NSWindow!
 
+//    func keyDown(event: NSEvent!) -> NSEvent {
+//        NSLog("key down is \(event.keyCode)");
+//        return event
+//    }
+//
     func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
         return true
     }
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Create the SwiftUI view that provides the window contents.
+//        NSEvent.addLocalMonitorForEvents(matching: NSEvent.EventTypeMask.keyDown, handler: keyDown)
         let contentView = ContentView().environmentObject(UserModel())
 
         // Create the window and set the content view. 
@@ -30,7 +36,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         window.center()
         window.isReleasedWhenClosed = true
         window.isMovable = true
-        window.title = "SudoKu Helper"
+        window.title = "SudoKu Helper 2.0"
         window.isMovableByWindowBackground = true
         window.setFrameAutosaveName("Main Window")
         window.contentView = NSHostingView(rootView: contentView)

@@ -8,10 +8,11 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ContentView: View{
+    @State var askData = true
     var body: some View {
         HStack(spacing: 0) {
-            Board().frame(width:690)
+            Board().frame(width:680)
             Controls().frame(width:200)
         }
         .frame(width: 890, height: 690)
