@@ -18,6 +18,7 @@ struct Board: View {
         }
         .padding(2)
         .background(Color.black)
+        .padding([.leading,.bottom], 20)
     }
 }
 

@@ -31,12 +31,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Create the window and set the content view. 
         window = NSWindow(
             contentRect: NSRect(x: 0, y: 0, width: 480, height: 300),
-            styleMask: [.titled, .closable],
+            styleMask: [.titled],
             backing: .buffered, defer: false)
         window.center()
         window.isReleasedWhenClosed = true
         window.isMovable = true
-        window.title = "SudoKu Helper 2.0"
+        window.titlebarAppearsTransparent = true
         window.isMovableByWindowBackground = true
         window.setFrameAutosaveName("Main Window")
         window.contentView = NSHostingView(rootView: contentView)

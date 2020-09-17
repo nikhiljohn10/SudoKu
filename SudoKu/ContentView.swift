@@ -12,9 +12,8 @@ struct ContentView: View{
     @State var askData = true
     var body: some View {
         HStack(spacing: 0) {
-            Board().frame(width:680)
-            Controls().frame(width:200)
+            Board()
+            Controls()
         }
-        .frame(width: 890, height: 690)
     }
 }
