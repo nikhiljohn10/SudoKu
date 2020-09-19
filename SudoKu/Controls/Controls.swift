@@ -13,13 +13,13 @@ struct Controls: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 30){
             VStack(alignment: .center) {
-                Text("SudoKu Helper v2.1")
+                Text("SudoKu Helper v2.2")
                     .font(.headline)
-                    .foregroundColor(Color.white)
+                    .foregroundColor(Color(NSColor.labelColor))
                     .padding(.vertical, 20)
                     .frame(maxWidth: .infinity)
             }
-            .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.white, lineWidth: 2))
+            .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color(NSColor.labelColor), lineWidth: 2))
             .opacity(0.2)
             .frame(maxWidth: .infinity)
             VStack(alignment: .leading) {
